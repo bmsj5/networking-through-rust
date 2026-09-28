@@ -1,0 +1,37 @@
+[package]
+name = "networking-through-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Educational repository explaining networking through Rust"
+authors = ["Yahor Darashuk"]
+repository = "https://github.com/bmsj5/networking-through-rust"
+keywords = ["education", "networking", "rust", "tcp"]
+categories = ["education", "network-programming"]
+license = "Apache-2.0"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "tcp-echo-server"
+path = "src/bin/tcp_echo_server.rs"
+
+[[bin]]
+name = "tcp-header-parser"
+path = "src/bin/tcp_header_parser.rs"
+
+[[bin]]
+name = "tcp-state-machine"
+path = "src/bin/tcp_state_machine.rs"
+
+[[bin]]
+name = "ip-header-parser"
+path = "src/bin/ip_header_parser.rs"
+
+[[bin]]
+name = "cidr-calculator"
+path = "src/bin/cidr_calculator.rs"
+
+[[bin]]
+name = "dns-resolver"
+path = "src/bin/dns_resolver.rs"
